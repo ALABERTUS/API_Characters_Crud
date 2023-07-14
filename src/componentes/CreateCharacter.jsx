@@ -1,48 +1,102 @@
-import axios from "axios"
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
-const url = "http://localhost:8080/characters"
+const url = "http://localhost:8080/characters";
 
 const CreateCharacter = () => {
+  const [nombre, setNombre] = useState('');
+  const [imagen, setImagen] = useState('');
+  const [descripcion, setDescripcion] = useState('');
+  const [editNombre, setEditNombre] = useState('');
+  const [editImagen, setEditImagen] = useState('');
+  const [editDescripcion, setEditDescripcion] = useState('');
+  const [characters, setCharacters] = useState([]);
+  const [editCharacterId, setEditCharacterId] = useState(null);
 
-    const [nombre, setNombre] = useState('')
-    const [imagen, setImagen] = useState('')
-    const [descripcion, setDescripcion] = useState('')
+  useEffect(() => {
+    fetchCharacters();
+  }, []);
 
-    const navigate = useNavigate()
-    
-    const store = async (e) => {
-        e.preventDefault() 
-        //dos parámetro: 1 = url. parámetro 2 = un objeto con mis datos. 
-        //Aquí le digo como enlazar lso datos de la api con los que le voy a enviar 
-        await axios.post(url, { name: nombre, img: imagen, description: descripcion  }) 
-        navigate("/")
-    }
+  const fetchCharacters = async () => {
+    const response = await axios.get(url);
+    setCharacters(response.data);
+  };
 
+  const createCharacter = async (e) => {
+    e.preventDefault();
+    await axios.post(url, { name: nombre, img: imagen, description: descripcion });
+    fetchCharacters();
+  };
+
+  const deleteCharacter = async (id) => {
+    await axios.delete(`${url}/${id}`);
+    fetchCharacters();
+  };
+
+  const startEditCharacter = (id, name, img, description) => {
+    setEditCharacterId(id);
+    setEditNombre(name);
+    setEditImagen(img);
+    setEditDescripcion(description);
+  };
+
+  const cancelEditCharacter = () => {
+    setEditCharacterId(null);
+    setEditNombre('');
+    setEditImagen('');
+    setEditDescripcion('');
+  };
+
+  const saveEditCharacter = async (id) => {
+    await axios.put(`${url}/${id}`, { name: editNombre, img: editImagen, description: editDescripcion });
+    fetchCharacters();
+    cancelEditCharacter();
+  };
 
   return (
     <>
-        <h2>Crear un elemento</h2>
+      <h2>Crear un personaje</h2>
 
-        <form onSubmit={store}>
-            <div>
-                <label>Nombre</label>
-                {/** nombre tiene que valer lo que ingresamos en el value del input */}
-                <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)}/> 
-            </div>
-            <div>
-                <label>Imagen</label>
-                <input type="text" value={imagen} onChange={(e) => setImagen(e.target.value)}/>
-            </div>
-            <div>
-                <label>Descripción</label>
-                <input type="text" value={descripcion} onChange={(e) => setDescripcion(e.target.value)}/>
-            </div>
-            <button type="submit">Crear personaje</button>
-        </form>
+      <form onSubmit={createCharacter}>
+        <div>
+          <label>Nombre</label>
+          <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
+        </div>
+        <div>
+          <label>Imagen</label>
+          <input type="text" value={imagen} onChange={(e) => setImagen(e.target.value)} />
+        </div>
+        <div>
+          <label>Descripción</label>
+          <input type="text" value={descripcion} onChange={(e) => setDescripcion(e.target.value)} />
+        </div>
+        <button type="submit">Crear personaje</button>
+      </form>
+
+      <h2>Personajes</h2>
+
+      {characters.map((character) => (
+        <div key={character.id}>
+          {editCharacterId === character.id ? (
+            <>
+              <input type="text" value={editNombre} onChange={(e) => setEditNombre(e.target.value)} />
+              <input type="text" value={editImagen} onChange={(e) => setEditImagen(e.target.value)} />
+              <input type="text" value={editDescripcion} onChange={(e) => setEditDescripcion(e.target.value)} />
+              <button onClick={() => saveEditCharacter(character.id)}>Guardar</button>
+              <button onClick={cancelEditCharacter}>Cancelar</button>
+            </>
+          ) : (
+            <>
+              <h3>{character.name}</h3>
+              <p>{character.description}</p>
+              <button onClick={() => deleteCharacter(character.id)}>Borrar</button>
+              <button onClick={() => startEditCharacter(character.id, character.name, character.img, character.description)}>Editar</button>
+            </>
+          )}
+        </div>
+      ))}
     </>
-  )
-}
+  );
+};
 
-export default CreateCharacter
+export default CreateCharacter;

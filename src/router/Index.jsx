@@ -1,14 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/Home.jsx";
-import CreateCharacter from "../componentes/CreateCharacter.jsx";
+import Home from "../pages/Home";
+import CreateCharacter from "../components/CreateCharacters";
+
 
 export const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Home/>
-    },
-    {
-        path: "/create",
-        element: <CreateCharacter/>
-    }
-])
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "/create",
+    element: <CreateCharacter />
+  },
+
+]);
