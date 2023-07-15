@@ -12,7 +12,7 @@ https://vitejs.dev/guide/
 ```
 ## Además hemos usado el IDE Intelligent para tomar los datos de java
 ```
-PONER ENLACE DEL REPOSITORIO y abrir luego poner el "run" para que se lean los datos y el puerto de acceso será "http://localhost:8080/character"
+PONER ENLACE DEL REPOSITORIO y abrir luego "CharactersApplication" y poner el "run" para que se lean los datos y el puerto de acceso será "http://localhost:8080/character"
 ```
 
 
