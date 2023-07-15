@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import ShowCharacters from "../components/ShowCharacters";
+import ShowCharacters from "../componentes/ShowCharacters";
 import axios from 'axios';
 
 const Home = () => {
