@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
-import ShowCharacters from "../componentes/ShowCharacters";
+import ShowCharacters from "../components/ShowCharacters";
 import axios from 'axios';
+
+
 
 const Home = () => {
     const deleteCharacter = async (id) => {
@@ -15,8 +17,10 @@ const Home = () => {
         </div>
         <ShowCharacters/>
         
+        
       </div>
     );
   };
   
   export default Home;
+  

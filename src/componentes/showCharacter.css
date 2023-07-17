@@ -1,34 +1,92 @@
+body{
+  background-image: url("./img/32256.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
 .contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  height: 100%;
+  border: 5px solid yellow;
+  border-radius: 1%;
+  margin-top: 40px;
+  margin-left: auto; 
+  margin-right: auto; 
+  background-color:transparent;
+  color:yellow;
+}
+
+.contenedor-img {
+  width: 100%;
+  height: 60%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  
+ 
+}
+
+.contenedor-datos {
+  width: 100%;
+  height: 40%;
+  background-color: black;
+  border-radius: 5%;
+  margin-bottom: 0.5%;
+ 
+  
+ 
+}
+
+.img {
+  width: 40%;
+  border:solid 5px yellow;
+  border-radius:5%;
+
+ 
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  }
+  .button-container button{
+    background-color:red;
+    color: yellow;
+    border:solid 5px yellow;
+    margin:5px;
+  }
+  
+  .contenedorfondo button{
+    background-color:yellow;
+    border:solid 5px yellow;
+    color:red;
+    margin:25px;
+  }
+
+  .contenedorfondo {
+    color: white;
+    background-color: black;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 60%;
-    height: 100%;
-    border: 5px solid black;
-    margin-top: 30px;
-    margin-left: auto; 
-    margin-right: auto; 
-    background-color: red;
-  }
-  
-  .contenedor-img {
-    width: 100%;
-    height: 60%;
-  }
-  
-  .contenedor-datos {
-    width: 100%;
-    height: 40%;
-  }
-  
-  .img {
     width: 40%;
+    height: 100%;
+    border: 5px solid yellow;
+    border-radius: 5%;
+    margin: 0 auto;
+    text-align: center;
   }
   
-  .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
+  .contenedorfondo h2{
+    color:rgb(130, 195, 214);
+    
   }
-  

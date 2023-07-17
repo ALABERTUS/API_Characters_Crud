@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 
 const url = "http://localhost:8080/characters";
 
@@ -12,6 +14,7 @@ const CreateCharacter = () => {
   const [editDescripcion, setEditDescripcion] = useState('');
   const [characters, setCharacters] = useState([]);
   const [editCharacterId, setEditCharacterId] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchCharacters();
@@ -26,11 +29,14 @@ const CreateCharacter = () => {
     e.preventDefault();
     await axios.post(url, { name: nombre, img: imagen, description: descripcion });
     fetchCharacters();
+    navigate('/');
+    
   };
 
   const deleteCharacter = async (id) => {
     await axios.delete(`${url}/${id}`);
     fetchCharacters();
+    navigate('/');
   };
 
   const startEditCharacter = (id, name, img, description) => {
@@ -51,23 +57,25 @@ const CreateCharacter = () => {
     await axios.put(`${url}/${id}`, { name: editNombre, img: editImagen, description: editDescripcion });
     fetchCharacters();
     cancelEditCharacter();
+    navigate('/');
   };
 
   return (
     <>
+    <div className="contenedorfondo">
       <h2>Crear un personaje</h2>
 
       <form onSubmit={createCharacter}>
         <div>
-          <label>Nombre</label>
+          <label >Nombre</label>
           <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
         </div>
         <div>
-          <label>Imagen</label>
+          <label >Imagen</label>
           <input type="text" value={imagen} onChange={(e) => setImagen(e.target.value)} />
         </div>
         <div>
-          <label>Descripción</label>
+          <label >Descripción</label>
           <input type="text" value={descripcion} onChange={(e) => setDescripcion(e.target.value)} />
         </div>
         <button type="submit">Crear personaje</button>
@@ -91,12 +99,14 @@ const CreateCharacter = () => {
               <p>{character.description}</p>
               <button onClick={() => deleteCharacter(character.id)}>Borrar</button>
               <button onClick={() => startEditCharacter(character.id, character.name, character.img, character.description)}>Editar</button>
-            </>
-          )}
+              </>
+            )}
+          </div>
+        ))}
+    
         </div>
-      ))}
-    </>
-  );
-};
-
-export default CreateCharacter;
+      </>
+    );
+  };
+  
+  export default CreateCharacter;
