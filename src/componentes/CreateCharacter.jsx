@@ -14,8 +14,6 @@ const CreateCharacter = () => {
     
     const store = async (e) => {
         e.preventDefault() 
-        //dos parámetro: 1 = url. parámetro 2 = un objeto con mis datos. 
-        //Aquí le digo como enlazar lso datos de la api con los que le voy a enviar 
         await axios.post(url, { name: nombre, img: imagen, description: descripcion  }) 
         navigate("/")
     }
@@ -28,7 +26,6 @@ const CreateCharacter = () => {
         <form onSubmit={store}>
             <div>
                 <label>Nombre</label>
-                {/** nombre tiene que valer lo que ingresamos en el value del input */}
                 <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)}/> 
             </div>
             <div>
