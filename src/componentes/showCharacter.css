@@ -1,19 +1,113 @@
-.contenedor{
-    width: 50%;
-    height: 70vh;
-    border: solid 1px white;
-    margin-top: 20px;
-}
-.contenedor-img{
-    width: 100%;
-    height: 60%;
-}
-
-.contenedor-datos{
-    width: 100%;
-    height: 40%;
-}
-
-.img{
-    width: 30%;
-}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./img/32256.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }  
+  h1{
+    background: linear-gradient(to right,black, rgb(143, 96, 8), yellow, green, blue, indigo, rgb(68, 37, 68));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 100px;
+    font-family: cursive;
+    font-weight: bold;
+    margin-bottom: 20px;
+    }
+  
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .card {
+    border: solid 5px blue;
+    margin-bottom: 20px;
+    margin-top: 5%;
+    padding: 20px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(245, 241, 11, 0.568);
+    border-radius: 10%;
+    color: rgb(10, 10, 10);
+  }
+  
+  .img {
+    width: 500px;
+    border:solid 5px blue;
+    border-radius: 10%;
+  }
+  
+  h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    color:rgb(73, 15, 235);
+  }
+  
+  p {
+    font-size: larger;
+    font-weight: bold;
+    font-family: cursive;
+  }
+  
+  .container ,button{
+    background-color: red;
+    font-weight: bold;
+    margin:2%
+  }
+  
+  .contenedorcreate {
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgba(255, 0, 0, 0.281) ;
+    border:solid 5px blue;
+    font-weight: bold;
+    color: yellow;
+    border-radius: 10%;
+  }
+  
+  .contenedorcreate button{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    font-weight: bold;
+  }
+  
+  .contenedoredit {
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgba(0, 128, 0, 0.445);
+    border:solid 5px blue;
+    color: yellow;
+    font-weight: bold;
+    border-radius: 10%;
+  }
+  
+  .contenedoredit button{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    font-weight: bold;
+  }
+  
+  .contenedorcreate h2{
+    font-weight: bold;
+  }
+  
+  .contenedoredit h2{
+    font-weight: bold;
+  }
+  
+  .delete button{
+    background-color: aqua;
+  
+  }
