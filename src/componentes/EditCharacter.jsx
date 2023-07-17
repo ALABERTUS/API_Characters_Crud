@@ -29,13 +29,12 @@ useEffect(() => {
 
 
   return (
-    <div>
-         <h3>Edit</h3>
+    <div className="contenedoredit">
+         <h2>Edit</h2>
 
 <form onSubmit={update}>
     <div>
         <label>Nombre</label>
-        {/** nombre tiene que valer lo que ingresamos en el value del input */}
         <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)}/> 
     </div>
     <div>

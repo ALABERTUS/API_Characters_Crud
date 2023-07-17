@@ -14,37 +14,84 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: azure;
+   
     }
 
 .card {
     border: solid 5px blue;
     margin-bottom: 20px;
+    margin-top: 5%;
     padding: 20px;
-    width: 300px;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
     background-color: black;
+    border-radius: 10%;
+    color: yellow;
 }
 
 .img {
-    width: 300px;
+    width: 500px;
     border:solid 5px blue;
+    border-radius: 10%;
     
 }
 
 h3 {
     margin-top: 10px;
+    font-weight: bold;
+    color:red;
 
 }
 
 p {
     font-weight: bold;
+    
 }
 
 .container ,button{
     background-color: red;
 }
-.contenedorcreate{
-    background-color:yellow;
+
+.contenedorcreate {
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgba(255, 0, 0, 0.281) ;
+    border:solid 5px blue;
+    font-weight: bold;
+    color: yellow;
+    border-radius: 10%;
+}
+
+.contenedorcreate button{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    font-weight: bold;
+}
+
+.contenedoredit {
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgba(0, 128, 0, 0.445);
+    border:solid 5px blue;
+    color: yellow;
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+.contenedoredit button{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    font-weight: bold;
+
+}
+.contenedorcreate h2{
+    font-weight: bold;
+}
+.contenedoredit h2{
+    font-weight: bold;
 }
