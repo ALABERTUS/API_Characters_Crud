@@ -20,7 +20,7 @@ const CreateCharacter = () => {
 
 
   return (
-    <>
+    <div className="contenedorcreate">
         <h2>Crear un elemento</h2>
 
         <form onSubmit={store}>
@@ -39,7 +39,7 @@ const CreateCharacter = () => {
             </div>
             <button type="submit">Crear personaje</button>
         </form>
-    </>
+    </div>
   )
 }
 
