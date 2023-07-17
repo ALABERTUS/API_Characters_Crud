@@ -33,7 +33,7 @@ const ShowCharacters = () => {
                     <img src={character.img} alt="" className="img" />
                     <h3>{character.name}</h3>
                     <p>{character.description}</p>
-                    <NavLink to={`/edit/${character.id}`}><button>editar</button></NavLink>
+                    <NavLink to={`/edit/${character.id}`}><button>Editar</button></NavLink>
                     <DeleteCharacter id={character.id} onDelete={getAllCharacters} />
                 </div>
             ))}
