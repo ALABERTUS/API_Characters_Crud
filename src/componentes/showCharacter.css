@@ -1,19 +1,50 @@
-.contenedor{
-    width: 50%;
-    height: 70vh;
-    border: solid 1px white;
-    margin-top: 20px;
-}
-.contenedor-img{
-    width: 100%;
-    height: 60%;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./image/imagen1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }  
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: azure;
+    }
+
+.card {
+    border: solid 5px blue;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
 }
 
-.contenedor-datos{
-    width: 100%;
-    height: 40%;
+.img {
+    width: 300px;
+    border:solid 5px blue;
+    
 }
 
-.img{
-    width: 30%;
+h3 {
+    margin-top: 10px;
+
+}
+
+p {
+    font-weight: bold;
+}
+
+.container ,button{
+    background-color: red;
+}
+.contenedorcreate{
+    background-color:yellow;
 }

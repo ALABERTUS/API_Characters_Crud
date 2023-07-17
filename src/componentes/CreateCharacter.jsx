@@ -14,15 +14,12 @@ const CreateCharacter = () => {
     
     const store = async (e) => {
         e.preventDefault() 
-        //dos parámetro: 1 = url. parámetro 2 = un objeto con mis datos. 
-        //Aquí le digo como enlazar lso datos de la api con los que le voy a enviar 
         await axios.post(url, { name: nombre, img: imagen, description: descripcion  }) 
         navigate("/")
     }
 
-
   return (
-    <>
+    <div className="contenedorcreate">
         <h2>Crear un elemento</h2>
 
         <form onSubmit={store}>
@@ -41,8 +38,9 @@ const CreateCharacter = () => {
             </div>
             <button type="submit">Crear personaje</button>
         </form>
-    </>
+    </div>
   )
 }
+
 
 export default CreateCharacter
