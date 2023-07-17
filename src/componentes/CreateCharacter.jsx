@@ -5,12 +5,10 @@ import { useNavigate } from "react-router-dom"
 const url = "http://localhost:8080/characters"
 
 const CreateCharacter = () => {
-
-    const [nombre, setNombre] = useState('')
-    const [imagen, setImagen] = useState('')
-    const [descripcion, setDescripcion] = useState('')
-
-    const navigate = useNavigate()
+const [nombre, setNombre] = useState('')
+const [imagen, setImagen] = useState('')
+const [descripcion, setDescripcion] = useState('')
+const navigate = useNavigate()
     
     const store = async (e) => {
         e.preventDefault() 
@@ -26,7 +24,6 @@ const CreateCharacter = () => {
         <form onSubmit={store}>
             <div>
                 <label>Nombre</label>
-                {/** nombre tiene que valer lo que ingresamos en el value del input */}
                 <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)}/> 
             </div>
             <div>

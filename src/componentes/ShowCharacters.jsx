@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
+import DeleteCharacter from "../componentes/DeleteCharacter";
 import './showCharacter.css'
 
 const url = "http://localhost:8080/characters"
@@ -33,7 +34,7 @@ const ShowCharacters = () => {
                     <h3>{character.name}</h3>
                     <p>{character.description}</p>
                     <NavLink to={`/edit/${character.id}`}><button>editar</button></NavLink>
-               
+                    <DeleteCharacter id={character.id} onDelete={getAllCharacters} />
                 </div>
             ))}
         </div>
