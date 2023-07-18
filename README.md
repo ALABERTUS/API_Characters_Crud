@@ -42,7 +42,7 @@ Nos aparecera una lista de frameworks, elegimos react.
 ## Seguidamente elegiremos una "variant" de las que aparecen, en este caso, JavaScript.
 
 ```
-Una vez creada intruduciremos los comandos:
+Una vez creada, intruduciremos los comandos:
 - "cd seguido del nombre que hayamos elegido"
 - "npm install"
 - " npm run dev"
