@@ -1,0 +1,147 @@
+INSERT
+INTO
+  characters
+  (name, img, `description`)
+VALUES
+  ('Buzz', 'https://cartooncorp.es/51233-thickbox_default/toy-story-buzz-lightyear-dynamic-8ction-heros.jpg', 'Buzz Lightyear is one of the main characters in Disney/Pixar''s Toy Story franchise, voiced by Tim Allen. He is a superhero toy action figure based on the in-universe media franchise consisting of a blockbuster feature film and animated series, Space Ranger.');
+INSERT
+INTO
+  characters
+  (name, img, `description`)
+VALUES
+  ('Woody', 'https://www.miyagi.es/26640-large_default/disneys-woody-toy-story.jpg', 'Woody was designed by Bud Luckey, and is based on John Lasseter''s Casper pull-string doll he had as a kid, as well as the Howdy Doody puppets from the 1950s show. Woody is named after Woody Strode, a character actor known for many roles in western films.');
+INSERT
+INTO
+  characters
+  (name, img, `description`)
+VALUES
+  ('Jessie', 'https://static.fnac-static.com/multimedia/Images/ES/MC/4c/79/8d/9271628/1507-1/tsp20220707111717/Figura-Jeie-Toy-Story-Disney-Gran-Escala.jpg#c1416863-3119-42ba-b430-6f43bebd09e0', 'Jessie is a fictional cowgirl rag doll who appears in the Disney-Pixar Toy Story franchise making her first appearance in Toy Story 2. Jessie is a brave and excitable rag doll who carries a great deal of sadness, as her original owner outgrew her and abandoned her.');
+
+INSERT
+INTO
+  characters
+  (name, img, `description`)
+VALUES
+   ('Mr Potato', 'https://images.squarespace-cdn.com/content/v1/513c543ce4b0abff73bc0a82/1363092825934-HT0MKO9FW3YIBP7F2KB0/potato.jpg?format=750w', 'Mr.Potato is a supporting character in the franchise who is always there to bring some humor to the situation. Although he has a cynical and short-tempered personality, Mr. Potato always means well and is a form of voice of reason.');
+
+INSERT
+INTO
+  characters
+  (name, img, `description`)
+VALUES
+   ('Bo peep', 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Bo_Peep.png/220px-Bo_Peep.png', 'Bo Peep is a fictional character from the Toy Story animated film saga created by Pixar and is voiced by actress Annie Potts. She is a porcelain shepherd girl and is Woodys love interest. She looks cute, kind and elegant');
+
+
+
+INSERT
+INTO
+  characters
+  (name, img, `description`)
+VALUES
+   ('Mrs Potato', 'https://s3.ppllstatics.com/lasprovincias/www/pre2017/multimedia/prensa/noticias/201008/18/fotos/2705507.jpg', 'Mrs. Potato is a toy in the shape of a potato that can be attached to and removed from different parts of the face. She is the wife of Mr. Potato, and adoptive mother of three aliens.');
+
+INSERT
+INTO
+  characters
+  (name, img, `description`)
+VALUES
+  ('Rex', 'https://static.fnac-static.com/multimedia/Images/ES/MC/5b/3f/1a/1720155/1507-1/tsp20131002173213/Toy-Story-3-Minifigura-rex-9-cm.jpg#b18af5e8-99af-4b00-87a3-f6c25a91a93a', 'Rex is a toy dinosaur that appears in the animated films of the Toy Story franchise. The original actor who does the voice of Rex, is Wallace Shawn. Rex is a large, green, plastic Tyrannosaurus toy.');
+
+INSERT
+INTO
+   characters
+   (name, img, `description`)
+VALUES
+   ('Emperador Zurg', 'https://depor.com/resizer/1yCMLNGVNgjUAGBhkYfUQhp8oTI=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/W7VN4VWDEBC7DGKMPTHP2YFB6Q.webp', 'The Evil Emperor Zurg is a character from the movie Toy Story 2, and the main villain of the animated series Buzz Lightear of Star Command. He aims to destroy Buzz Lightyear and take over the universe.');
+
+INSERT
+INTO
+   characters
+   (name, img, `description`)
+VALUES
+   ('Andy', 'https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2017/06/244504-triste-historia-andy-toy-story-es-falsa.jpg?tf=1200x', 'Andrew "Andy" Davis is a major character in the Toy Story movies. He is the owner of many of the main toys (such as Woody and Lightyear) in the movies until the end of Toy Story 3 where he gives them to Bonnie Anderson. In the Toy Story series, Andy lives with his little sister Molly and his mother.');
+
+INSERT
+INTO
+    characters
+    (name, img, `description`)
+VALUES
+    ('Slinky', 'https://wafuu.com/cdn/shop/products/image_1_bd3b06e3-0166-49b3-8a1b-086fd73d4b2f_1120x.jpg?v=1666688513', 'Toy Storys dog is Slinky. Although he is a dachshund made of spring, he is one of Woodys best friends. He plays a supporting role, but is always there to be helpful when needed.');
+
+INSERT
+INTO
+    characters
+    (name, img, `description`)
+VALUES
+    ('Hamm', 'https://www.gachazone.es/4616-large_default/hamm-coleccion-toy-story-narabundesu-01.jpg', 'Hamm is a piggy bank or piggy bank, which appears in the animated films of Toy Story He has a very good relationship with all the other toys, despite the fact that he argues very often with Rex');
+
+INSERT
+INTO
+    characters
+    (name, img, `description`)
+VALUES
+    ('Wheezy', 'https://indiehoy.com/wp-content/uploads/2020/05/wheezy.jpg', 'A rubber penguin with a squeaker that Andys mom keeps when it goes bad. It appears for the first time in the second installment. When it is taken away to sell at the flea market, Woody rescues it and it is then that it is stolen by Al. At the end of the film, he is shown with his grinder repaired. In Toy Story 3, it is mentioned that Wheezy was donated before the events of the movie.');
+
+INSERT
+INTO
+    characters
+    (name, img, `description`)
+VALUES
+     ('Forky', 'https://m.media-amazon.com/images/I/71lriC4uB6L._AC_SY741_.jpg', 'A plastic bucket with pipe cleaner arms, googly eyes, and popsicle stick legs. This character appears for the first time in the fourth installment. He was built by Bonnie feeling lonely during her first day at preschool. He does not consider himself a toy, but garbage, and tries to run away from the rest. Woody talks some sense into him and Forky quickly becomes familiar with him. Later, he appears in a few shorts where he asks the rest of the toys questions about his environment.');
+
+INSERT
+INTO
+    characters
+    (name, img, `description`)
+VALUES
+    ('Martians ', 'https://m.media-amazon.com/images/I/71uV6J8qOhL._AC_SX355_.jpg', 'They are three green aliens with three eyes each who were traveling in the van that the toys use to return home in Toy Story 2. They are about to fall out of the window when Mr. Potato (or Potato Head) saves them, for for which they are "very grateful" and follow him everywhere. He is forced by his wife to adopt them. In Toy Story 3, they rescue the other toys from falling into the landfills incinerator.');
+
+INSERT
+INTO
+    characters
+    (name, img, `description`)
+VALUES
+    ('Control ', 'https://static.carrefour.es/hd_510x_/crs/cdn_static/catalog/hd/333196_00_1.jpg', 'A radio controlled car. Woody tries to wield it to push Buzz behind the table and also uses it to save Buzz from Sids dog and to get them both back into the moving truck after being pushed by the rest of the toys. In Toy Story 4 a memory is shown in which Woody and Bo Peep rescue him from a storm by being stranded on the street.');
+
+INSERT
+INTO
+    characters
+    (name, img, `description`)
+VALUES
+    ('Soldiers ', 'https://bbts1.azureedge.net/images/p/full/2017/08/b5b428d8-e165-4ea5-acb8-5d22de16a45b.jpg', 'A sergeant and his zafarrancho who are in charge of the safety of the rest. Woody often sends them on missions in order to find out something.');
+
+INSERT
+INTO
+    characters
+    (name, img, `description`)
+VALUES
+    ('Etch ', 'https://i.ebayimg.com/images/g/H78AAOSwZo1f0Fts/s-l1600.jpg', 'An electronic blackboard on which all kinds of things are drawn. In Toy Story 2 he shows the portrait of Al, Woodys kidnapper. In Toy Story 3 he is mentioned as a donated toy.');
+
+INSERT
+INTO
+    characters
+    (name, img, `description`)
+VALUES
+    ('Lotso', 'https://assets.change.org/photos/9/ac/bq/LqACbqFlfRzCNVb-800x450-noPad.jpg?1602470184', 'Lotso is a fictional antagonist character in the Disney Pixar film Toy Story 3. He had belonged to Daisy along with Baby and Laughs. But he was discarded and when he arrived at the house of his ex-owner, she replaced him and that caused a change in him, turning him evil .');
+
+INSERT
+INTO
+    characters
+    (name, img, `description`)
+VALUES
+    ('Sid Philips', 'https://depor.com/resizer/P3V4rMuU_YAwqMExYUkonsqAlX0=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/OQFEHKZAZFEKVHHEJOPJKZBGPI.jpg', 'Sidney "Sid" Phillips is the main antagonist of the 1995 Disney / Pixar animated film Toy Story . He was Andys troublesome neighbor. Unlike his neighbor, he did extremely horrible things to her toys instead of treating them with love and care, until he was horrified to learn that the toys were actually alive, which scared him so much that he vowed to change his life. his way of acting.');
+
+INSERT
+INTO
+    characters
+    (name, img, `description`)
+VALUES
+    ('Mazinger Z', 'https://i0.wp.com/noticiasparamunicipios.com/wp-content/uploads/2022/05/mazinger-z.jpg?resize=1200%2C675&ssl=1', 'The Mazinger Z is a robot created by Dr.Kabuto, to stop Dr. Hells plans to conquer the world. 36 According to estimates made in 2008, the real budget for the construction of the robot would have reached 725 million US dollars');
+
+INSERT
+INTO
+    characters
+    (name, img, `description`)
+VALUES
+    ('Afrodita A', 'https://cdnb.20m.es/sites/76/2018/06/Destripando-mitos-No-Afrodita-A-nunca-grit%C3%B3-la-famosa-frase-%E2%80%98%C2%A1Pechos-fuera%E2%80%99-en-la-serie-Mazinger-Z.jpg', ' It was built, as revealed in later episodes, as a civilian or cargo robot. Aphrodite, like Mazinger Z, is a manned robot that is accessed by a glider ship, protected by a hemispherical dome that is propelled by two directional micro-rockets and stands on four retractable legs, which are supported by small wheels. Sayakas ship is also used as a means of transportation on many occasions. Yumi ends up reinforcing him with Super Alloy Z and installs the famous pectoral missiles on him (the words "Breasts out!" were never spoken in the series). 44 Although Aphrodite will never have the power of the Mazinger, and after many repairs, it ends up being destroyed.');
+

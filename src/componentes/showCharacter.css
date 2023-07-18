@@ -72,6 +72,13 @@ p {
     border-radius: 10%;
   }
 
+  .btn-primary{
+    border: 5px solid black;
+    font-size: large;
+    font-weight: bold;
+    background-color: yellow;
+  }
+
   .dataedit button {
     margin-top: 8%;
     margin-bottom: 8%;

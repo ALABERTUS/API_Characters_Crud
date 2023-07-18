@@ -20,6 +20,7 @@ const CreateCharacter = () => {
 
 
   return (
+    <div className="dataedit">
     <>
         <h2>Crear un elemento</h2>
 
@@ -39,6 +40,7 @@ const CreateCharacter = () => {
             <button type="submit">Crear personaje</button>
         </form>
     </>
+    </div>
   )
 }
 
