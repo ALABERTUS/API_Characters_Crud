@@ -58,9 +58,19 @@ p {
 }
 
 .dataEdit {
- 
-
-}
+    width: 200%;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color:rgba(0, 13, 128, 0.445);
+    border:solid 5px rgb(167, 72, 245);
+    color: rgb(255, 3, 66);
+    font-weight: bold;
+    border-radius: 10%;
+  }
 
 .btn-edit {
   border: 5px solid black;
