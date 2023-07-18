@@ -65,6 +65,7 @@ body {
   
   .contenedorcreate {
     width: 150%;
+    height:250px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -83,6 +84,7 @@ body {
   
   .contenedoredit {
     width: 150%;
+    height:250px;
     justify-content: center;
     align-items: center;
     text-align: center;
