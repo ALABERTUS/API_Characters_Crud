@@ -1,4 +1,3 @@
-YO SOY CRUD
 ## CRUD con React consumiendo una API de Java
 ```
 Para acceder a este repositorio (pongo ejemplo con visual studio code) debes tener instalados los siguientes programas: 
@@ -13,7 +12,7 @@ https://vitejs.dev/guide/
 ```
 ## Además hemos usado el IntelliJ IDEA para tomar los datos de java
 ```
-PONER ENLACE DEL REPOSITORIO y abrir luego "CharactersApplication" y poner el "run" para que se lean los datos y el puerto de acceso será "http://localhost:8080/character"
+En el enlace del repositorio java: https://github.com/crismouta/API-Characters.git y abrir luego "CharactersApplication" y poner el "run" para que se lean los datos y el puerto de acceso será "http://localhost:8080/character"
 ```
 
 
