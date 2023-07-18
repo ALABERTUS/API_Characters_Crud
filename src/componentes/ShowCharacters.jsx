@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
 import './showCharacter.css'
+import DeleteCharacter from "../componentes/DeleteCharacter.jsx"
 
 const url = "http://localhost:8080/characters"
 const ShowCharacters = () => {
@@ -36,7 +37,7 @@ const ShowCharacters = () => {
                         <img src={character.img} alt="" className="img" />
                         <h2 >{character.name}</h2>
                         <p>{character.description}</p>
-                        <NavLink to={`/delete/${character.id}`}><button className="btn-delete">Eliminar</button></NavLink>
+                        <DeleteCharacter id={character.id} onDelete={getAllCharacters} />
                         
                     </div>
                 ))
