@@ -3,6 +3,7 @@ import Home from "../pages/Home.jsx";
 import ShowCharacters from "../componentes/ShowCharacters.jsx"
 import CreateCharacter from "../componentes/CreateCharacter.jsx";
 import EditCharacter from "../componentes/EditCharacter.jsx"
+import DeleteCharacter from "../componentes/DeleteCharacter.jsx"
 
 export const router = createBrowserRouter([
     {
@@ -20,5 +21,10 @@ export const router = createBrowserRouter([
     {
     path: "/edit/:id",
     element: <EditCharacter/>
-    }
+    },
+    {
+        path: "/delete/:id",
+            element: <DeleteCharacter/>
+        }
+   
 ])
