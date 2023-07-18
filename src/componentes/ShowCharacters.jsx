@@ -37,8 +37,7 @@ const ShowCharacters = () => {
                         <img src={character.img} alt="" className="img" />
                         <h2 >{character.name}</h2>
                         <p>{character.description}</p>
-                        <DeleteCharacter id={character.id} onDelete={getAllCharacters} />
-                        
+                        <DeleteCharacter id={character.id} onDelete={getAllCharacters} /> 
                     </div>
                 ))
             }
