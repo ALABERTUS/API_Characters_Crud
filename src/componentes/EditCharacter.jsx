@@ -33,7 +33,7 @@ const EditCharacter = () => {
 
 
     return (
-        <div>
+        <div className="dataEdit">
             <h3>Edit</h3>
             <form onSubmit={update}>
                 <div className='mb-3'>
