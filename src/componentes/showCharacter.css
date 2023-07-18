@@ -31,16 +31,19 @@ body {
     margin-bottom: 20px;
     margin-top: 5%;
     padding: 20px;
-    width: 500px;
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(245, 241, 11, 0.568);
     border-radius: 10%;
     color: rgb(10, 10, 10);
   }
+
+ 
   
   .img {
-    width: 500px;
+    width: 350px;
+    height: 350px;
     border:solid 5px blue;
     border-radius: 10%;
   }
