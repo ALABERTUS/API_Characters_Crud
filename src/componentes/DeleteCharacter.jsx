@@ -13,7 +13,7 @@ await axios.delete(`http://localhost:8080/characters/${id}`)
 
 return (
     <div className="delete">
-    <button onClick={deleteCharacter}>Eliminar personaje</button>
+    <button className="btn-delete" onClick={deleteCharacter}>Eliminar</button>
     </div>
 )
 }
