@@ -7,16 +7,18 @@ body {
     background-position: center;
     background-attachment: fixed;
   }  
-  h1{
-    background: linear-gradient(to right,black, rgb(143, 96, 8), yellow, green, blue, indigo, rgb(68, 37, 68));
+  h1 {
+    background: linear-gradient(to right, black, rgb(143, 96, 8), yellow, green, blue, indigo, rgb(68, 37, 68));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
     text-align: center;
     font-size: 100px;
     font-family: cursive;
     font-weight: bold;
     margin-bottom: 20px;
-    }
+  }
   
   .contenedor {
     display: flex;
